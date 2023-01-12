@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>   
+<meta charset="UTF-8">
+<link href="css/all.css" rel="stylesheet" media="all" type="text/css">
+<title>花语大全 </title>
+</head>
+<body>
+<div class="logo"><img style="height: 70px;" src="images/logo.svg"></div>
+<div class="head2"><a href="index.html">主页</a><a href="pro.html">商品检索</a> <a href="reg.html">会员登录</a> <a href="user.html">个人信息</a> 
+  <div class="clear"></div>
+</div>
+<div class="clear"></div>
+<div class="content" >
+  <div class="bar">
+    <h2>购物车</h2>
+  </div>
+  <br>
+  <br>
+  <div id="page">
+    <div id="listdiv">
+      <table cellpadding="0" cellspacing="0" id="gwcTable" width="100%">
+        <tr>
+          <td width="73"><input type="checkbox" id="checkAll" />
+          全选</td>
+          <td width="158">商品</td>
+          <td width="198">单价</td>
+          <td width="140">数量</td>
+          <td width="91">小计</td>
+          <td width="74">操作</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="checkCss"/></td>
+          <td><p><img src="images/x5.jpg" /></p>
+            <p>送长辈 · 一路向阳</p></td>
+          <td>300</td>
+          <td class="count"><input class="reduceCss" id="jia1" value="-" type="button"/>
+            <input type="text" class="inputCountCss" id="inputCountCss1" value="1" size="8"/>
+            <input class="addCss" id="jia2" value="+" type="button"/></td>
+          <td id="stotal3">2000</td>
+          <td><a href="#"  class="a">删除</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="checkCss" /></td>
+          <td><p><img src="images/x6.jpg"/></p>
+            <p>爱情 · 恋恋情深</p></td>
+          <td>200</td>
+          <td class="count"><input class="reduceCss" id="jia3" value="-" type="button"/>
+            <input type="text" class="inputCountCss" id="inputCountCss2" value="1" size="8"/>
+            <input class="addCss" id="jia4" value="+" type="button"/></td>
+          <td id="stotal3">600</td>
+          <td><a href="#"  class="a">删除</a></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="checkCss" /></td>
+          <td><p><img src="images/x7.jpg"/></p>
+            <p>送长辈 · 母爱</p></td>
+          <td>100</td>
+          <td class="count"><input class="reduceCss" id="jia5" value="-" type="button"/>
+            <input type="text" class="inputCountCss" id="inputCountCss3" value="1" size="8"/>
+            <input class="addCss" id="jia6" value="+" type="button"/></td>
+          <td id="stotal3">200</td>
+          <td><a href="#" class="a">删除</a></td>
+        </tr>
+      </table>
+    </div>
+    <div id="jiesuan">
+      <div class="t jisuanbtn">
+        <input type="submit" name="btnOrder" id="btnOrder" value="立即结算" />
+      </div>
+      <div class="t TotalMoney">合计：￥<span id="priceTotal">0.00</span></div>
+      <div class="t">已选商品 <span id="countTotal">0</span> 件</div>
+    </div>
+  </div>
+</div> 
+<div class="end">网页底部</div>
+<script type="text/javascript" src="js/cart.js"></script>
+</body>
+</html>
